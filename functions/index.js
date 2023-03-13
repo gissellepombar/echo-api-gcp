@@ -16,16 +16,16 @@ app.get('/', (req, res) => {
   });
 
 //GET: Get All
-app.get("/getall", getAllDoc);
+app.get("/deck", getAllDoc);
 
 //GET ONE: Get One
 app.get("/deck/:deckId", getOneDeck)
 
 //POST: Post Doc 
-app.post("/post", postDoc);
+app.post("/deck", postDoc);
 
 //DELETE: Delete 
-app.delete("/delete/:deckId", deleteDeck)
+app.delete("/deck/:deckId", deleteDeck)
 
 //UPDATE: Patch
 app.patch('/deck/:deckId/ranking/:cardIndex', updateRanking)

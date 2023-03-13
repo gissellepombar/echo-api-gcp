@@ -13,19 +13,6 @@ export async function getAllDoc(req, res) {
     res.send(collection);
 }
 
-//Get: Get One 
-// export async function getOneDeck(req, res) {
-    
-//     const { deckId } = req.params;
-//     const db = dbConnect();
-//     const collection = await db.collection(collectionName).findOne({_id: new ObjectId(deckId)})
-//     .catch(err => {
-//         res.status(500).send(err)
-//         return
-//     })
-//     res.status(201).send(collection);
-// }
-
 export async function getOneDeck(req, res) {
     const { deckId } = req.params;
     const db = dbConnect();
